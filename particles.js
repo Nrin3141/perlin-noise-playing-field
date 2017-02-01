@@ -26,7 +26,7 @@ function Particle() {
     stroke(0, 5);
     strokeWeight(1);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
-
+    this.updatePrev();
   }
   this.updatePrev = function() {
     this.prevPos.x = this.pos.x;
