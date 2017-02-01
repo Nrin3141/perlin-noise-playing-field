@@ -5,7 +5,7 @@ var zoff = 0;
 var particles = [];
 var flowfield = [];
 function setup() {
-  var canvas = createCanvas(200, 200);
+  var canvas = createCanvas(800, 600);
   cols = floor(width / scl);
   rows = floor(height / scl);
   background(255);
@@ -36,7 +36,7 @@ function draw() {
       pop();*/
     }
     yoff += inc;
-    zoff += 0.03;
+    zoff += 0.0003;
     for (var i = 0; i < particles.length; i++) {
       particles[i].follow(flowfield);
       particles[i].update();
