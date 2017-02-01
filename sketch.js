@@ -10,7 +10,7 @@ function setup() {
   rows = floor(height / scl);
   background(255);
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 2500; i++) {
     particles[i] = new Particle();
   }
 
