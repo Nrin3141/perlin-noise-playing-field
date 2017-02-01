@@ -5,7 +5,7 @@ var zoff = 0;
 var particles = [];
 var flowfield = [];
 function setup() {
-  var canvas = createCanvas(800, 600, WEBGL);
+  var canvas = createCanvas(800, 600);
   cols = floor(width / scl);
   rows = floor(height / scl);
   background(255);
